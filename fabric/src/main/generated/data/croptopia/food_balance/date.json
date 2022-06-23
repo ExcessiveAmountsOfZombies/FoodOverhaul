@@ -1,5 +1,5 @@
 {
   "hunger": 1,
-  "saturation": 0.6,
+  "saturation": 0.5,
   "foodType": "food_overhaul:raw_ingredient"
 }

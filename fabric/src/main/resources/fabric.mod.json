@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "bozoiD",
+  "id": "food_overhaul",
   "version": "${version}",
-  "name": "BOZOID",
-  "description": "",
+  "name": "Food Overhaul",
+  "description": "Re-balances Minecraft food and modded foods.",
   "authors": [
     "Thonk"
   ],
@@ -14,25 +14,25 @@
     "irc": "https://discord.gg/GZjtAn3F6W"
   },
   "license": "LGPL-3.0",
-  "icon": "assets/professions/icon.png",
+  "icon": "assets/foodoverhaul/icon.png",
   "environment": "*",
   "entrypoints": {
+    "client": [
+      "com.epherical.foodoverhaul.client.FoodOClient"
+    ],
     "main": [
-      "com.epherical.bozo.BozoFabric"
+      "com.epherical.foodoverhaul.FoodOverhaulFabric"
+    ],
+    "fabric-datagen": [
+      "com.epherical.foodoverhaul.datagen.FoodGeneratorEntry"
     ]
   },
   "mixins": [
-    "bozoiD.mixins.json"
+    "food_overhaul.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
     "minecraft": "1.18.2"
-  },
-  "custom": {
-    "waila:plugins": {
-      "id": "professions:prof_waila",
-      "initializer": "com.epherical.professions.integration.wthit.ProfWailaPlugin"
-    }
   }
 }

@@ -63,7 +63,7 @@ loom {
 
             name "Data Generation"
             vmArg "-Dfabric-api.datagen"
-            vmArg "-Dfabric-api.datagen.modid=bozoiD"
+            vmArg "-Dfabric-api.datagen.modid=food_overhaul"
             vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
 
             runDir "build/datagen"

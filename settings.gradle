@@ -12,9 +12,8 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'FabForgeTemplate'
+rootProject.name = 'FoodOverhaul'
 
 include 'fabric'
 include 'forge'
-include 'fabric'
 

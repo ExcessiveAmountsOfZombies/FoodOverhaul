@@ -1,5 +1,5 @@
 {
-  "hunger": 5,
-  "saturation": 0.6,
+  "hunger": 4,
+  "saturation": 0.85,
   "foodType": "food_overhaul:snack"
 }

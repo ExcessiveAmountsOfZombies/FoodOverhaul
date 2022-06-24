@@ -15,11 +15,14 @@ public class ModifiedFood {
     private final float saturation;
     private final FoodType type;
 
-    public ModifiedFood(Item item, int foodLevel, float saturation, FoodType type) {
+    private final boolean disabled;
+
+    public ModifiedFood(Item item, int foodLevel, float saturation, FoodType type, boolean disabled) {
         this.itemID = item;
         this.foodLevel = foodLevel;
         this.saturation = saturation;
         this.type = type;
+        this.disabled = disabled;
     }
 
     public float getSaturation() {
@@ -43,6 +46,7 @@ public class ModifiedFood {
         int food = GsonHelper.getAsInt(object, "hunger");
         float sat = GsonHelper.getAsFloat(object, "saturation");
         FoodType type = FoodOverhaulFabric.FOOD_TYPES.get(ResourceLocation.tryParse(GsonHelper.getAsString(object, "foodType")));
-        return new ModifiedFood(item, food, sat, type);
+        boolean disabled = GsonHelper.getAsBoolean(object, "disabled", false);
+        return new ModifiedFood(item, food, sat, type, disabled);
     }
 }

@@ -15,5 +15,5 @@ pluginManagement {
 rootProject.name = 'FoodOverhaul'
 
 include 'fabric'
-include 'forge'
+//include 'forge'
 

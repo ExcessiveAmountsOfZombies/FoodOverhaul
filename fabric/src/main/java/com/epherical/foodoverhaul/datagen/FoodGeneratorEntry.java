@@ -370,6 +370,40 @@ public class FoodGeneratorEntry implements DataGeneratorEntrypoint {
             generate(7, 1.0F, SMALL_MEAL, id(namespace, "grilled_oysters"), path, cache);
             generate(9, 1.0F, LARGE_MEAL, id(namespace, "anchovy_pizza"), path, cache);
             generate(6, 1.0F, SMALL_MEAL, id(namespace, "mashed_potatoes"), path, cache);
+            namespace = "adventurez";
+            generate(1, 0.3F, RAW, id(namespace, "mammoth_meat"), path, cache);
+            generate(3, 0.6F, LIGHT_MEAL, id(namespace, "cooked_mammoth_meat"), path, cache);
+            generate(1, 0.1F, RAW, id(namespace, "iguana"), path, cache);
+            generate(3, 0.6F, LIGHT_MEAL, id(namespace, "cooked_iguana_meat"), path, cache);
+            generate(2, 0.1F, RAW, id(namespace, "ender_whale_meat"), path, cache);
+            generate(4, 0.7F, LIGHT_MEAL, id(namespace, "cooked_ender_whale_meat"), path, cache);
+            generate(1, 0.3F, RAW, id(namespace, "rhino_meat"), path, cache);
+            generate(3, 0.5F, LIGHT_MEAL, id(namespace, "cooked_rhino_meat"), path, cache);
+            generate(1, 0.1F, RAW, id(namespace, "raw_venison"), path, cache);
+            generate(3, 0.5F, LIGHT_MEAL, id(namespace, "cooked_venison"), path, cache);
+            generate(1, 0.3F, RAW, id(namespace, "warthog_meat"), path, cache);
+            generate(3, 0.6F, LIGHT_MEAL, id(namespace, "cooked_warthog_meat"), path, cache);
+            namespace = "additionaladditions";
+            generate(5, 0.8F, SMALL_MEAL, id(namespace, "berry_pie"), path, cache);
+            generate(3, 0.8F, LIGHT_MEAL, id(namespace, "fried_egg"), path, cache);
+            generate(3, 1.6F, LIGHT_MEAL, id(namespace, "honeyed_apple"), path, cache);
+            namespace = "goodall";
+            generate(1, 0.3F, RAW, id(namespace, "raw_venison"), path, cache);
+            generate(3, 0.6F, LIGHT_MEAL, id(namespace, "cooked_venison"), path, cache);
+            namespace = "promenade";
+            generate(1, 0.3F, RAW, id(namespace, "duck"), path, cache);
+            generate(3, 0.5F, LIGHT_MEAL, id(namespace, "cooked_duck"), path, cache);
+            generate(1, 0.3F, RAW, id(namespace, "banana"), path, cache);
+            generate(1, 0.3F, RAW, id(namespace, "apricot"), path, cache);
+            generate(1, 0.3F, RAW, id(namespace, "mango"), path, cache);
+            namespace = "biomemakeover";
+            generate(1, 0.3F, RAW, id(namespace, "glowfish"), path, cache);
+            generate(3, 0.6F, LIGHT_MEAL, id(namespace, "cooked_glowfish"), path, cache);
+            generate(5, 0.8F, LIGHT_MEAL, id(namespace, "glowshroom_stew"), path, cache);
+            generate(1, 0.3F, RAW, id(namespace, "raw_toad"), path, cache);
+            generate(3, 0.6F, LIGHT_MEAL, id(namespace, "cooked_toad"), path, cache);
+            generate(1, 0.2F, RAW, id(namespace, "bulbus_root"), path, cache);
+            generate(3, 0.5F, LIGHT_MEAL, id(namespace, "roasted_bulbus_root"), path, cache);
 
 
         }
